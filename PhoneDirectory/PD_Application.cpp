@@ -90,6 +90,16 @@ void do_remove_entry(Phone_Directory& the_directory) // Exercise 1.8: please com
 	string name;
 	cout << "Enter name: ";
 	getline(cin, name);
+	string number = the_directory.remove_entry(name); //Get the number associated with name
+	if (number != "")
+	{
+		cout << "The phone number: " << number << " belonging to: " << name << " has been removed from the direcotry. " << endl;
+		//Stating that phone number associated with person has been removed from phone directory
+	}
+	else {
+		cout << name << " is not in the directory. " << endl;
+		//If remove_entry returns an empty string or " ", person is not in directory and cannot be removed.
+	}
 	// Complete the rest of this function 
 	
 }

@@ -57,20 +57,24 @@ private:
 	{
 	public:
 		Directory_Entry() {} //Default no-argument constructor
-		Directory_Entry(std::string the_name, std::string the_number) {
-			// constructor not implemented yet
+		Directory_Entry(std::string the_name, std::string the_number) //New directory entries constructor with name and phone number arguments 
+		{
+			name = the_name; //setting name entered according to name argument in constructor
+			number = the_number; //setting phone number entered according to number argument
 		}
 		std::string get_name() {
-			return ""; //method not implemented yet
+			return name; //retrieving name
 		}
 		std::string get_number() {
-			return ""; //method not implemented yet
+			return number; //retrieving phone number
 		}
 		void set_number(const std::string& new_number) {
-			//method not implemented yet
+			number = new_number; //set number to address of new_number variable to set value of number
 		}
 	
 	private:
+		string name; //name of individual
+		string number; //phone number of the individual
 
 	};
 
