@@ -154,3 +154,7 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+/.vs/HW02/v15/Browse.VC.db
+/.vs/HW02/v15/Browse.VC.opendb
+/.vs/PhoneDirectory/v15/Browse.VC.db
+/.vs/PhoneDirectory/v15/Browse.VC.opendb
